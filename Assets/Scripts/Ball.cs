@@ -12,14 +12,14 @@ public class Ball : MonoBehaviour
     Vector2 paddleToBallVector;
     bool hasStarted = false;
 
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rigidbody2;
     AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         paddleToBallVector = transform.position - paddle.transform.position;
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidbody2 = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -35,7 +35,7 @@ public class Ball : MonoBehaviour
     private void LaunchOnMouseClick()
     {
         if (Input.GetMouseButtonDown(0)) {
-            rigidbody2D.velocity = ballVelocity;
+            rigidbody2.velocity = ballVelocity;
             hasStarted = true;
         }
     }
