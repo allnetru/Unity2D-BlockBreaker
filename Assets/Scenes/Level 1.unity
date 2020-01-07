@@ -711,11 +711,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 1613733028388673473, guid: 48f3574d73870354796deaa2849afe49,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1440
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613733028388673473, guid: 48f3574d73870354796deaa2849afe49,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613733028388673475, guid: 48f3574d73870354796deaa2849afe49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1613733029580115305, guid: 48f3574d73870354796deaa2849afe49,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1146310713}
+    - target: {fileID: 2996399416010237526, guid: 48f3574d73870354796deaa2849afe49,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f3574d73870354796deaa2849afe49, type: 3}
 --- !u!1001 &2067634020169888474
@@ -1271,6 +1291,16 @@ PrefabInstance:
     - target: {fileID: 7836751207427866407, guid: 1f321799fef05bd45983d6168efeea2a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836751208023514269, guid: 1f321799fef05bd45983d6168efeea2a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836751208023514271, guid: 1f321799fef05bd45983d6168efeea2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
