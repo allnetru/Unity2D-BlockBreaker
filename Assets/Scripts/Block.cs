@@ -10,7 +10,7 @@ public class Block : MonoBehaviour
     [SerializeField] Sprite[] hitSprites;
 
     private Level level;
-    private GameSession gameStatus;
+    private GameSession gameSession;
     private SpriteRenderer spriteRenderer;
 
     private int maxHits = 1;
@@ -20,7 +20,7 @@ public class Block : MonoBehaviour
     void Start()
     {
         level = FindObjectOfType<Level>();
-        gameStatus = FindObjectOfType<GameSession>();
+        gameSession = FindObjectOfType<GameSession>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         maxHits = hitSprites.Length + 1;
@@ -72,7 +72,7 @@ public class Block : MonoBehaviour
 
     private void PlayBlockDestroySFX()
     {
-        gameStatus.AddToScore();
+        gameSession.AddToScore();
         AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
     }
 

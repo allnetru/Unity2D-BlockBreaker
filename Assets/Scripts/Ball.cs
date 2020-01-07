@@ -62,4 +62,9 @@ public class Ball : MonoBehaviour
             rigidbody2.velocity += velocityTweak;
         }
     }
+
+    public bool IsHasStarted()
+    {
+        return hasStarted;
+    }
 }
