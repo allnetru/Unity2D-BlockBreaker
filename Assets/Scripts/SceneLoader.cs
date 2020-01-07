@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    private GameSession gameSession;
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        gameSession = FindObjectOfType<GameSession>();
+    }
+
     public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -13,6 +21,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadStartScene()
     {
+        gameSession.ResetGame();
         SceneManager.LoadScene(0);
     }
 

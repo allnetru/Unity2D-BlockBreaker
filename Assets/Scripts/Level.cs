@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    [SerializeField] int breakableBlocks = 0;
+    private int breakableBlocks = 0;
 
     SceneLoader sceneLoader;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
-    public void CountBreakableBlocks()
+    public void CountBlocks()
     {
         breakableBlocks++;
     }
@@ -22,7 +22,7 @@ public class Level : MonoBehaviour
     public void BlockDestoyed()
     {
         breakableBlocks--;
-        if (breakableBlocks == 0) {
+        if (breakableBlocks <= 0) {
             sceneLoader.LoadNextScene();
         }
     }

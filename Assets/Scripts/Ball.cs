@@ -5,18 +5,18 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    [SerializeField] Paddle paddle;
-    [SerializeField] Vector2 ballVelocity;
-    [SerializeField] AudioClip[] ballSounds;
+    [SerializeField] private Paddle paddle;
+    [SerializeField] private Vector2 ballVelocity;
+    [SerializeField] private AudioClip[] ballSounds;
 
-    Vector2 paddleToBallVector;
-    bool hasStarted = false;
+    private Vector2 paddleToBallVector;
+    private bool hasStarted = false;
 
-    Rigidbody2D rigidbody2;
-    AudioSource audioSource;
+    private Rigidbody2D rigidbody2;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         paddleToBallVector = transform.position - paddle.transform.position;
         rigidbody2 = GetComponent<Rigidbody2D>();
@@ -24,7 +24,7 @@ public class Ball : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (!hasStarted) {
             LockBallToPaddle();

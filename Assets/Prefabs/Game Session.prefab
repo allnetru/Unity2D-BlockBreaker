@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1613733027991623933}
   - component: {fileID: 1613733027991623934}
   m_Layer: 0
-  m_Name: Game Status
+  m_Name: Game Session
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,11 +55,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1613733027991623933}
     m_Modifications:
-    - target: {fileID: 4607315215143340508, guid: c37f7b64010f6934290a64069449ac34,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4607315216366244726, guid: c37f7b64010f6934290a64069449ac34,
         type: 3}
       propertyPath: m_Name
